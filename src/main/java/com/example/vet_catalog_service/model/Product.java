@@ -16,13 +16,11 @@ public class Product {
     private Integer id;
 
     private String name;
-    private BigDecimal price; // Usamos BigDecimal para dinero (mejor práctica)
+    private BigDecimal price;
     private Integer stock;
     
-    // --- CONSTRUCTORES MANUALES ---
     public Product() {}
 
-    // --- GETTERS Y SETTERS MANUALES ---
     public Integer getId() {
         return id;
     }
