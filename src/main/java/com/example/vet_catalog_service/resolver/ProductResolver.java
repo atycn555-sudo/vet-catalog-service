@@ -1,6 +1,6 @@
-package com.example.vet_catalog_service.resolver; // <--- DEBE TERMINAR EN 'resolver'
+package com.example.vet_catalog_service.resolver;
 
-import java.util.List; // Asegúrate de que esta ruta sea 100% correcta
+import java.util.List;
 import java.util.Optional;
 import com.example.vet_catalog_service.model.Product;
 import org.springframework.graphql.data.method.annotation.Argument;
@@ -19,14 +19,12 @@ public class ProductResolver {
         this.productRepository = productRepository;
     }
 
-    // Resuelve List<Product>
     @QueryMapping
     public List<Product> allProducts() {
         // El repositorio ya sabe que tiene que devolver List<Product>
         return productRepository.findAll(); 
     }
 
-    // Resuelve Optional<Product>
     @QueryMapping
     public Optional<Product> productById(@Argument Integer id) {
         return productRepository.findById(id);
