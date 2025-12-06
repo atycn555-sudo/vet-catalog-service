@@ -1,5 +1,5 @@
 package com.example.vet_catalog_service.repository;
-import java.util.List; // <--- RUTA CORREGIDA
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
